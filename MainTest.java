@@ -34,6 +34,22 @@ public class MainTest {
         Main main = new Main(2,-8);
         assertEquals(-6,main.dodawanie());
     }
+    @Test
+    public void CzteryipolPluspolDajenamwynikPiec(){
+        Main main = new Main(4.5,0.5);
+        assertEquals(5,main.dodawanie());
+    }
+    @Test
+    public void minusPolPlusCzteryDajenamwynikTrzyipol(){
+        Main main = new Main(-0.5,4);
+        assertEquals(3.5,main.dodawanie());
+    }
+    @Test
+    public void minusPolPlusminusCzteryipolDajenamwynikminus5(){
+        Main main = new Main(-0.5,-4.5);
+        assertEquals(-5,main.dodawanie());
+    }
+
 //Odejmowanie
 
     @Test
@@ -61,6 +77,24 @@ public class MainTest {
         Main main = new Main(-2,-2);
         assertEquals(0,main.odejmowanie());
     }
+    @Test
+    public void DwacminusJedenipolDajenamwynikPol(){
+        Main main = new Main(2,1.5);
+        assertEquals(0.5,main.odejmowanie());
+    }
+    @Test
+    public void minusPolminusDwaDajenamwynikminusDwaipol(){
+        Main main = new Main(-0.5,2);
+        assertEquals(-2.5,main.odejmowanie());
+    }
+    @Test
+    public void minusPolminusminusTrzyipolDajenamwynikminusDwaipol(){
+        Main main = new Main(-0.5,-3.5);
+        assertEquals(3,main.odejmowanie());
+    }
+
+
+
     //Mnożenie
 
     @Test
@@ -68,6 +102,7 @@ public class MainTest {
         Main main = new Main(6,6);
         assertEquals(36,main.mnozenie());
     }
+
 
     @Test
     public void minusSzescrazyminusSzescDajenamwyniktrzydziesciszesc(){
@@ -89,6 +124,28 @@ public class MainTest {
         Main main = new Main(2,0);
         assertEquals(0,main.mnozenie());
     }
+    @Test
+    public void DwarazyPolDajenamwynikJedan(){
+        Main main = new Main(2,0.5);
+        assertEquals(1,main.mnozenie());
+    }
+    @Test
+    public void PolrazyPolDajenamwynikCwierc(){
+        Main main = new Main(0.5,0.5);
+        assertEquals(0.25,main.mnozenie());
+    }
+    @Test
+    public void minusPolrazyminusminusDwaipolDajenamwynikCwierc(){
+        Main main = new Main(-0.5,-2.5);
+        assertEquals(1.25,main.mnozenie());
+    }
+    @Test
+    public void minusPolrazyDwaDajenamwynikCwierc(){
+        Main main = new Main(-0.5,2);
+        assertEquals(-1,main.mnozenie());
+    }
+
+
 
 //Dzielenie
 
@@ -118,6 +175,28 @@ public class MainTest {
         Main main = new Main(0,2);
         assertEquals(0,main.dzielenie());
     }
+    @Test
+    public void DwaodzielicnaPolDajenamwynikCztery(){
+        Main main = new Main(2,0.5);
+        assertEquals(4,main.dzielenie());
+    }
+    @Test
+    public void PolodzielicnaPolDajenamwynikJeden(){
+        Main main = new Main(0.5,0.5);
+        assertEquals(1,main.dzielenie());
+    }
+    @Test
+    public void minudPolodzielicnaDwaDajenamwynikCztery(){
+        Main main = new Main(-0.5,2);
+        assertEquals(-0.25,main.dzielenie());
+    }
+
+    @Test
+    public void minudPolodzielicnaminusDwaipolDajenamwynikDwiedziesiate(){
+        Main main = new Main(-0.5,-2.5);
+        assertEquals(0.2,main.dzielenie());
+    }
+
    //Potęgowanie
 
 
@@ -142,7 +221,7 @@ public class MainTest {
 
     @Test
     public void pierwiastekkwadratowyzDziewieciuwynosiTrzy(){
-        Main main = new Main(9);
+        Main main = new Main(9.0);
         assertEquals(3,main.pierwiastek());
     }
 
