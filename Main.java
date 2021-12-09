@@ -11,27 +11,31 @@ public class Main {
     }
 
     public double dodawanie() {
-        
+
         return a + b;
     }
 
     public double odejmowanie() {
-        
+
         return a - b;
     }
 
     public double mnozenie() {
-        
+
         return a * b;
     }
 
-    public double dzielenie() {
-        
-        return a / b;
+    public Number dzielenie() {
+        if(b==0 || a==0){
+           return null;
+        }
+        else{
+            return a/b;
+        }
     }
 
     public double potegowanie(){
-        
+
         return Math.pow(a,b);
     }
 
