@@ -171,9 +171,9 @@ public class MainTest {
         assertEquals(1,main.dzielenie());
     }
     @Test
-    public void ZeroodzielicnaDwaDajenamwynikJeden(){
+    public void ZeropodzielicnaDwaDajenamwynikJeden(){
         Main main = new Main(0,2);
-        assertEquals(0,main.dzielenie());
+        assertEquals(null,main.dzielenie());
     }
     @Test
     public void DwaodzielicnaPolDajenamwynikCztery(){
