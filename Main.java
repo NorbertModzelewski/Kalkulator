@@ -1,36 +1,42 @@
 public class Main {
-    int a,b;
+    double a,b;
 
-    public Main(int a, int b) {
+    public Main(double a, double b) {
         this.a = a;
         this.b = b;
     }
 
-    public Main(int a) {
+    public Main(double a) {
         this.a = a;
     }
 
-    public int dodawanie() {
+    public double dodawanie() {
+        
         return a + b;
     }
 
-    public int odejmowanie() {
+    public double odejmowanie() {
+        
         return a - b;
     }
 
-    public int mnozenie() {
+    public double mnozenie() {
+        
         return a * b;
     }
 
-    public int dzielenie() {
+    public double dzielenie() {
+        
         return a / b;
     }
 
     public double potegowanie(){
+        
         return Math.pow(a,b);
     }
 
     public double pierwiastek(){
+
         return Math.sqrt(a);
     }
 }
